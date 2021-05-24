@@ -2,9 +2,23 @@
     color : #f08d61
 }
 
+.parent{
+    color: blue;
+    margin-top: 50px;
+}
+
+
 .details{
     font-size:  26px;
-    margin-left:  50px;
+    margin-left:  100px;
+    background-color: yellow;
+    border-style: dashed;
+    border-width: 20px;
+    border-color: black;
+    padding: 10px;
+    margin-top: 500px;
+    display: block;
+ 
 }
 
 span{
