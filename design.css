@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+}
+
+.header {
+    grid-area: 1 / 1 / span 1 / span 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+}
+
+.login-container {
+    grid-area: 2 / 1 / span 1 / span 1;
+    
+}
+
+.login-image-container {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.footer {
+    grid-area: 3 / 1 / span 1 / span 2;
+    display: flex;
+    justify-content: center;
+}
+  
+.grad {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, #FFFB87 50%, #FFFB87 100%);
+}
+
+.forgot-password { 
+    text-decoration: none; 
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    color: #35A8FF;
+    font-weight: bold;
+}
+
+.login-container2{
+    display: grid;
+    justify-content: right;
+    /* border: 1px solid rgba(247, 0, 0, 0.8); */
+    min-width: none;
+}
+
+.title {
+  justify-content: start;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 51px;
+  color: #2C2C2C;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  
+}
+
+.input {
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #F0F2F4;
+  min-height: 35px;
+  min-width: 350px;
+  text-indent: 10px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.description {
+  justify-content: end;
+  margin: 20px;
+  font-size: 21px;
+  color: #8998AA;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  
+}
+
+.icon {
+  text-align: start;
+  width: auto;
+  margin-left: 150px;
+  height: 50%;
+}
+
+.input1{
+    margin-bottom: 30px;
+}
+.input2{
+    margin-bottom: 10px;
+}
+
+
+.illustration{
+    max-width: auto;
+    max-height: 500px;
+}
+
+.login-form{
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    display: flex;
+    justify-content: right;
+    margin-left: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+.login-button{
+    
+    display: inline-block;
+    background-color: #FFFB87;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    min-width: 350px;
+    min-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.login-button-container{
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    display: flex;
+    justify-content: right;
+    margin-left: 20px;
+}
+
+.form-label{
+    font-size: 11px;
+    text-indent: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
