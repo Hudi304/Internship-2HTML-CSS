@@ -1,0 +1,42 @@
+.login-container {
+    display: flex;
+    justify-self: end;
+    justify-content: flex-end;
+    grid-area: 2 / 1 / span 1 / span 1;
+    
+}
+
+.login-container2{
+    display: grid;
+    justify-content: right;
+    min-width: none;
+}
+
+.header-container{
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+.grid-container {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
+}
+
+
+
+.debug{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
