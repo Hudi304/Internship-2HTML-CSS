@@ -11,9 +11,9 @@ interface DropDownFormItemProps{
 }
 
 //? ar trebui sa trimit data ca props ?
-let data = ["Bucharest", "Cluj-Napoca", "Timișoara", "Iași", "Constanța","Botosani"];
+const data = ["Bucharest", "Cluj-Napoca", "Timișoara", "Iași", "Constanța","Botosani"];
 
-export default function FormDropDownItem(props : DropDownFormItemProps) {
+export default function FormDropDownItem(props : DropDownFormItemProps)  : JSX.Element {
     return (
         <div className="profile-form-drop-down-item debug1">
 

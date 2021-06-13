@@ -6,11 +6,11 @@ import "./account-header.component.scss"
 
 import tqLogo from "../../../../assets/techquarter-logo-outline-rgb.png"
 
-export default function AccountHeader(){
+export default function AccountHeader()  : JSX.Element {
     return (
-        <div className="header-container debug">
+        <div className="profile-header-container debug">
             <span className="icon-container debug">
-                <img className="header-icon" src={tqLogo} alt="TQ"/>
+                <img className="profile-header-icon" src={tqLogo} alt="TQ"/>
             </span>
         </div>
             

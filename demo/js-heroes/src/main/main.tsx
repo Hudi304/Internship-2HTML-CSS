@@ -4,7 +4,7 @@ import UserProfilePage from '../pages/account/account.page'
 import LoginPage from '../pages/login/login.page'
 
 
-export function MainPage() {
+export function MainPage() : JSX.Element  {
     return (
         <Switch>
             <Route exact path={"/login"} component={() => <LoginPage />} />

@@ -1,4 +1,3 @@
-import React from "react";
 import "./account-menu-button.component.scss"
 
 interface AccountMenuButtonProps{
@@ -7,7 +6,7 @@ interface AccountMenuButtonProps{
 }
 
       
-export function AccountMenuButton(props: AccountMenuButtonProps) {
+export function AccountMenuButton(props: AccountMenuButtonProps) : JSX.Element  {
     return (
         <div className="menu-button-container debug">
             
@@ -15,6 +14,7 @@ export function AccountMenuButton(props: AccountMenuButtonProps) {
                 <props.svg/>
                 <label className="menu-button-label debug"><b> { props.text}</b></label>
             </button>
+            
         </div>
       
     )

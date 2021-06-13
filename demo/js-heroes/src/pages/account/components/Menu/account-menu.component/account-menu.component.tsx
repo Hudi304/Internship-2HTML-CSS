@@ -1,11 +1,10 @@
-import React from "react";
 import "./account-menu.component.scss"
 import  { Home, User,Folder, File, PieChart, Flag, PowerOff } from "../../../../svgs";
 import { AccountMenuButton } from "../account-menu-button.component/account-menu-button.component";
 
-export default function AccountMenu() {
+export default function AccountMenu()  : JSX.Element {
     return (
-        <div className="menu-container debug"> 
+        <div className="menu-container debugMenu"> 
             <div className="side-bar-grid debug">
                 <AccountMenuButton text="Dashboard" svg={Home}/>
                 <AccountMenuButton text="User Profile" svg={User} />

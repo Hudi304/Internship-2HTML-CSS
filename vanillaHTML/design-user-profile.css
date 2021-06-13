@@ -56,7 +56,8 @@ body {
 } */
 
 .menu-container {
-  display: flex;
+  display: grid;
+ 
   grid-area: 2 / 1 / span 1 / span 1;
   padding: 15px;
   padding-right: 0px;
@@ -76,6 +77,7 @@ body {
     background-color: #F2F4F6;
     font-size: 17px;
     transition: all 0.15s;
+    height: 3vh;
   }
 
   .logout-btn{
@@ -86,6 +88,11 @@ body {
   .felx{
     display: flex;
     flex-direction: column;
+  }
+
+  .side-bar-grid{
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 30vh 10vh ;
   }
 
   .menu-button:hover {
@@ -152,10 +159,30 @@ body {
   .profile-form{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 12vh 12vh 12vh 12vh 3vh 5vh 12vh 5vh;
+    /* grid-template-rows: 12vh 12vh 12vh 12vh 3vh 5vh 12vh 5vh; */
     background-color: #ffffff;
     padding: 0px;
+   
   }
+ 
+  @media (max-width: 900px) {
+    .profile-form { 
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      border: 1px solid rgb(0, 0, 0);
+    }
+    .line{
+      /* grid-area: 5 / 1 / span 1 / span 1; */
+    }
+    
+  }
+  @media (max-width: 600px) {
+    .profile-form { grid-template-columns:  1fr; 
+    border: 1px solid rgb(0, 0, 0);;
+    }
+    
+  }
+
   .profile-form-item {
     justify-content: center;
     align-content: center;
@@ -184,7 +211,7 @@ body {
   }
   
   .line{
-    grid-area: 5 / 1 / span 1 / span 3;
+    /* grid-area: 5 / 1 / span 1 / span 3; */
   }
 
   .change-password-title{
@@ -219,6 +246,10 @@ body {
     font-size: 15px;
     font-weight: bolder;
    justify-self: right;
+}
+
+div:hover svg g{
+  fill: red;
 }
   
 
