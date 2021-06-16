@@ -47,6 +47,10 @@
   padding-right: 13px;
 }
 
+.line{
+  grid-area: 5 / 1 / span 1 / span 3;
+}
+
 .save-button {
   display: inline-block;
   background-color: #fffb87;
@@ -74,5 +78,5 @@
 }
 
 .debugON {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  // border: 1px solid rgba(0, 0, 0, 0.8);
 }
